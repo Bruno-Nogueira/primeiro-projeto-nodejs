@@ -27,7 +27,7 @@ class TransactionsRepository {
     return balance
   }
 
-  public create({ title, value, type}: Transaction): Transaction {
+  public create({ title, value, type }: Transaction): Transaction {
     const transaction = new Transaction({ title, value, type })
     
     this.transactions.push(transaction)
